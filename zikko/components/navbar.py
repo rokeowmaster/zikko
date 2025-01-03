@@ -18,13 +18,14 @@ def navbar() -> rx.Component:
                         border_radius="25%",
                     ),
                     rx.heading(
-                        "Reflex", size="7", weight="bold"
+                        "Zikko", size="7", weight="bold"
                     ),
                     align_items="center",
                 ),
                 rx.hstack(
                     navbar_link("Tasks", "/tasks"),
                     navbar_link("Join", "/signup"),
+                    navbar_link("Add Task", "/addtasks"),
                     justify="end",
                     spacing="5",
                 ),
@@ -53,6 +54,7 @@ def navbar() -> rx.Component:
                     rx.menu.content(
                         rx.menu.item("Tasks"),
                         rx.menu.item("Join"),
+                        rx.menu.item("Add Task"),
                     ),
                     justify="end",
                 ),
